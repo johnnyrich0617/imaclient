@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImmunizationService} from '../../services/immunization.service';
 
 @Component({
   selector: 'app-validate-citizen',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValidateCitizenComponent implements OnInit {
 
-  constructor() { }
+  constructor(private imaService: ImmunizationService ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
