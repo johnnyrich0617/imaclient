@@ -1,0 +1,4 @@
+{
+  "baseApiUrl": "http://imaserver:7090/api",
+  "apiVersion": "/v1"
+}
