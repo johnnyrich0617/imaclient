@@ -6,16 +6,39 @@ import {AddAppointmentComponent} from './components/add-appointment/add-appointm
 import {ViewLocationsComponent} from './components/view-locations/view-locations.component';
 import {AdminViewAppointmentsComponent} from './components/admin-view-appointments/admin-view-appointments.component';
 import {AdminViewSupplyComponent} from './components/admin-view-supply/admin-view-supply.component';
+import {MapResolver} from './resolvers/map-resolver';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'validate', pathMatch: 'full'},
-  { path: 'validate', component: ValidateCitizenComponent },
-  { path: 'appointment/:id', component: AppointmentDetailsComponent },
-  { path: 'appointment/add', component: AddAppointmentComponent },
-  { path: 'locations', component: ViewLocationsComponent },
-  { path: 'admin/appointments', component: AdminViewAppointmentsComponent },
-  { path: 'admin/supply', component: AdminViewSupplyComponent}
+  {
+    path: '',
+    redirectTo: 'validate',
+    pathMatch: 'full'
+  },
+  {
+    path: 'validate',
+    component: ValidateCitizenComponent
+  },
+  {
+    path: 'citizendetails/:id',
+    component: AppointmentDetailsComponent
+  },
+  { path: 'appointment/add',
+    component: AddAppointmentComponent
+  },
+  {
+    path: 'locations',
+    component: ViewLocationsComponent,
+    resolve: { mapdata: MapResolver }
+  },
+  {
+    path: 'admin/appointments',
+    component: AdminViewAppointmentsComponent
+  },
+  {
+    path: 'admin/supply',
+    component: AdminViewSupplyComponent
+  }
 ];
 
 @NgModule({
