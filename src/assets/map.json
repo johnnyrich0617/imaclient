@@ -1,0 +1,51 @@
+{
+  "center":{
+    "lat":38.39741362559147,
+    "lng":-76.65794130637283
+  },
+  "mapMarkers":{
+    "locations":[
+      {
+        "id":1,
+        "locAddr":"24801 MD-235, Hollywood, MD 20636",
+        "locName":"Hollywood Fire/Rescue Base",
+        "locLng":-76.57640616,
+        "locLat":38.34892048},
+      {
+        "id":2,
+        "locAddr":"25500 Point Lookout Rd, Leonardtown, MD 20650",
+        "locName":"St Marys MedStar Hospital",
+        "locLng":-76.6382144,
+        "locLat":38.30229735
+      },
+      {
+        "id":3,
+        "locAddr":"45245 Drayden Rd, Valley Lee, MD 20692",
+        "locName":"Second District Volunteer Fire Department and Rescue Squad",
+        "locLng":-76.52363776,
+        "locLat":38.21437864
+      },
+      {
+        "id":4,
+        "locAddr":"4030 Old Town Rd, Huntingtown, MD 20639",
+        "locName":"Huntingtown Volunteer Fire",
+        "locLng":-76.61702156,
+        "locLat":38.64469606
+      },
+      {
+        "id":5,
+        "locAddr":"100 Hospital Rd, Prince Frederick, MD 20678",
+        "locName":"CalvertHealth Medical Center",
+        "locLng":-76.60328984,
+        "locLat":38.58179687
+      },
+      {
+        "id":6,
+        "locAddr":"5 Garrett Ave, La Plata, MD 20646",
+        "locName":"UM Charles Regional Medical Center",
+        "locLng":-76.96171881,
+        "locLat":38.55387974
+      }
+    ]
+  }
+}
