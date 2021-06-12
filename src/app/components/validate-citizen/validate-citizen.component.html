@@ -1,15 +1,47 @@
-<div class="container">
-  <p>validate-citizen works!</p>
-</div>
-
-<div class="container">
-  <div class="row mt-3">
-    <div class="col-md-6">
-      Left column
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="tri-county-header"></div>
+    <mat-card-title><strong><h3>Citizen Immunization Center</h3></strong></mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="../../assets/tchd.jpg" alt="Photo of Tri County Health Department">
+  <mat-card-content>
+    <p><strong>Personal Prevention & Protection</strong></p>
+    <p>
+      Regardless of public health orders, the guidance to protect yourself and your loved ones remains the same.
+      Get vaccinated. It’s one of the best ways to protect yourself and help end the pandemic.
+    </p>
+    <p>
+      Avoid large gatherings or crowds, especially indoors, until the risk of COVID-19 transmission is lower.
+      Check the state’s <strong>guidance by sector</strong> for additional recommendations for events and gatherings.
+    </p>
+    <mat-divider></mat-divider>
+    <mat-list>
+      <mat-list-item>
+        <p mat-line><strong>Get Vaccinated! Validate and create an appointment today.</strong></p>
+        <p mat-line>You can also view/update a current appointment</p>
+      </mat-list-item>
+    </mat-list>
+    <div class="validation-container">
+      <div class="input-part">
+         <mat-form-field appearance="outline" >
+            <mat-label>SSN or Tax ID for Validation</mat-label>
+            <input matInput [formControl]="validationFormControl" placeholder="Format: 111223333">
+           <mat-error *ngIf="validationFormControl.hasError('required')">
+             SSN or Tax Id is <strong>Required</strong>
+           </mat-error>
+        </mat-form-field>
+      </div>
+      <button mat-raised-button  color="accent">Validate</button>
     </div>
-    <div class="col-md-6">
-      Right column
-    </div>
-  </div>
-</div>
-<p>validate-citizen works!</p>
+    <mat-divider></mat-divider>
+    <br>
+    <p>Remember the <strong>Big Five Rules</strong> for safety</p>
+    <mat-list>
+      <mat-list-item>* Outdoor gatherings are safer than indoor gatherings.</mat-list-item>
+      <mat-list-item>* Online gatherings are safest, especially for people at high risk of severe illness.</mat-list-item>
+      <mat-list-item>* Keep 6 feet of distance from people who don’t live with you and have not been fully vaccinated.</mat-list-item>
+      <mat-list-item>* Wear a mask over your nose and mouth when in public, especially indoors.</mat-list-item>
+      <mat-list-item>* Wash your hands frequently, or use hand sanitizer if soap and water are not available.</mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
