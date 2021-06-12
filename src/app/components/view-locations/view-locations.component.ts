@@ -35,7 +35,7 @@ export class ViewLocationsComponent implements OnInit, AfterContentInit {
       const marker = new google.maps.Marker({
         position: new google.maps.LatLng(pinInfo.locLat, pinInfo.locLng),
         map: this.map,
-        title: pinInfo.locName,
+        title: pinInfo.locName + '\n' + pinInfo.locAddr,
       });
       this.mapMarkers.push(marker);
     });
