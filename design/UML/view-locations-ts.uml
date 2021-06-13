@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts</OriginalElement>
+  <nodes>
+    <node x="0.0" y="277.0">C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/core/core.d.ts#AfterContentInit#1217;Component;C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/core/core.d.ts#OnInit#157897;ViewChild;</node>
+    <node x="168.0" y="0.0">C:/Users/richa/CapstoneProject/imaclient/src/app/models/location.ts#ILocation#39;</node>
+    <node x="488.0" y="67.0">C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapData#75;</node>
+    <node x="346.0" y="426.0">C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/router/router.d.ts#ActivatedRoute#2080;</node>
+    <node x="219.0" y="166.0">C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ActivatedRoute#194;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#AfterContentInit#8;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#Component#26;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ILocation#242;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#IMapData#147;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#OnInit#37;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ViewChild#76;</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ActivatedRoute#194;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#AfterContentInit#8;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#Component#26;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ILocation#242;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#IMapData#147;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#OnInit#37;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ViewChild#76;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapData#75;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ActivatedRoute#194;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#AfterContentInit#8;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#Component#26;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ILocation#242;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#IMapData#147;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#OnInit#37;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ViewChild#76;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/models/location.ts#ILocation#39;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ActivatedRoute#194;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#AfterContentInit#8;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#Component#26;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ILocation#242;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#IMapData#147;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#OnInit#37;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ViewChild#76;" target="C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/core/core.d.ts#AfterContentInit#1217;Component;C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/core/core.d.ts#OnInit#157897;ViewChild;" relationship="">
+      <point x="1.280139437587323" y="4.833346979095708" />
+      <point x="1.2801394375873087" y="4.833346979095708" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ActivatedRoute#194;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#AfterContentInit#8;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#Component#26;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ILocation#242;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#IMapData#147;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#OnInit#37;C:/Users/richa/CapstoneProject/imaclient/src/app/components/view-locations/view-locations.component.ts#ViewChild#76;" target="C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/router/router.d.ts#ActivatedRoute#2080;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Custom" zoom="1.0" showDependencies="false" x="327.5" y="242.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Details</VISIBILITY>
+</Diagram>
+

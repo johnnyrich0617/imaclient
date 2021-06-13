@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>C:/Users/richa/CapstoneProject/imaclient/src/app/models</OriginalElement>
+  <nodes>
+    <node x="214.0" y="169.0">C:/Users/richa/CapstoneProject/imaclient/src/app/models/location.ts#ILocation#39;C:/Users/richa/CapstoneProject/imaclient/src/app/models/location.ts#IMapPoint#8;</node>
+    <node x="0.0" y="121.0">C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapPins#46;C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapPoint#8;</node>
+    <node x="156.0" y="0.0">C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappins.ts#ILocation#8;C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappins.ts#IMapPins#39;</node>
+    <node x="62.0" y="290.0">C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappoint.ts#IMapPoint#0;</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapPins#46;C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapPoint#8;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappins.ts#ILocation#8;C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappins.ts#IMapPins#39;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapPins#46;C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapPoint#8;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappoint.ts#IMapPoint#0;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappins.ts#ILocation#8;C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappins.ts#IMapPins#39;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/models/location.ts#ILocation#39;C:/Users/richa/CapstoneProject/imaclient/src/app/models/location.ts#IMapPoint#8;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/models/location.ts#ILocation#39;C:/Users/richa/CapstoneProject/imaclient/src/app/models/location.ts#IMapPoint#8;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/models/mappoint.ts#IMapPoint#0;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Custom" zoom="1.0" showDependencies="false" x="187.5" y="174.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Details</VISIBILITY>
+</Diagram>
+

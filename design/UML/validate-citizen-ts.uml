@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts</OriginalElement>
+  <nodes>
+    <node x="236.0" y="416.0">Component;C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/core/core.d.ts#OnInit#157897;</node>
+    <node x="413.0" y="0.0">C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/forms/forms.d.ts#FormControl#58892;C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/forms/forms.d.ts#Validators#138000;</node>
+    <node x="0.0" y="78.0">C:/Users/richa/CapstoneProject/imaclient/src/app/services/immunization.service.ts#ImmunizationService#106;</node>
+    <node x="186.0" y="177.0">C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#Component#9;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#FormControl#133;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#ImmunizationService#60;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#OnInit#20;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#Validators#146;</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#Component#9;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#FormControl#133;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#ImmunizationService#60;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#OnInit#20;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#Validators#146;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/services/immunization.service.ts#ImmunizationService#106;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#Component#9;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#FormControl#133;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#ImmunizationService#60;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#OnInit#20;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#Validators#146;" target="Component;C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/core/core.d.ts#OnInit#157897;" relationship="">
+      <point x="-5.05811790533528" y="0.0" />
+      <point x="-5.0581179053353225" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#Component#9;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#FormControl#133;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#ImmunizationService#60;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#OnInit#20;C:/Users/richa/CapstoneProject/imaclient/src/app/components/validate-citizen/validate-citizen.component.ts#Validators#146;" target="C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/forms/forms.d.ts#FormControl#58892;C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/forms/forms.d.ts#Validators#138000;" relationship="">
+      <point x="6.144518047887573" y="0.0" />
+      <point x="6.14451804788763" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Custom" zoom="1.0" showDependencies="false" x="-105.5" y="213.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Details</VISIBILITY>
+</Diagram>
+

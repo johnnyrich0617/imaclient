@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers</OriginalElement>
+  <nodes>
+    <node x="332.0" y="0.0">C:/Users/richa/CapstoneProject/imaclient/node_modules/rxjs/internal/Observable.d.ts#Observable#313;</node>
+    <node x="0.0" y="199.0">Injectable;</node>
+    <node x="128.0" y="32.0">of;</node>
+    <node x="219.0" y="148.0">C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#IMapData#135;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Injectable#9;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#MapService#179;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Observable#97;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Resolve#53;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#of#109;</node>
+    <node x="121.0" y="398.0">C:/Users/richa/CapstoneProject/imaclient/src/app/services/map.service.ts#MapService#196;</node>
+    <node x="464.0" y="193.0">C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapData#75;</node>
+    <node x="361.0" y="407.0">C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/router/router.d.ts#Resolve#46918;</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#IMapData#135;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Injectable#9;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#MapService#179;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Observable#97;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Resolve#53;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#of#109;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/models/mapdata.ts#IMapData#75;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#IMapData#135;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Injectable#9;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#MapService#179;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Observable#97;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Resolve#53;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#of#109;" target="C:/Users/richa/CapstoneProject/imaclient/node_modules/rxjs/internal/Observable.d.ts#Observable#313;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#IMapData#135;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Injectable#9;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#MapService#179;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Observable#97;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Resolve#53;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#of#109;" target="C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/router/router.d.ts#Resolve#46918;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#IMapData#135;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Injectable#9;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#MapService#179;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Observable#97;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Resolve#53;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#of#109;" target="of;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#IMapData#135;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Injectable#9;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#MapService#179;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Observable#97;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Resolve#53;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#of#109;" target="C:/Users/richa/CapstoneProject/imaclient/src/app/services/map.service.ts#MapService#196;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#IMapData#135;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Injectable#9;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#MapService#179;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Observable#97;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#Resolve#53;C:/Users/richa/CapstoneProject/imaclient/src/app/resolvers/map-resolver.ts#of#109;" target="Injectable;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Custom" zoom="1.0" showDependencies="false" x="315.5" y="232.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Details</VISIBILITY>
+</Diagram>
+
