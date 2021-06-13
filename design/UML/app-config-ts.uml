@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>C:/Users/richa/CapstoneProject/imaclient/src/app/services/app-config.service.ts</OriginalElement>
+  <nodes>
+    <node x="0.0" y="143.0">C:/Users/richa/CapstoneProject/imaclient/src/app/services/app-config.service.ts#HttpClient#53;C:/Users/richa/CapstoneProject/imaclient/src/app/services/app-config.service.ts#Injectable#9;</node>
+    <node x="117.0" y="0.0">Injectable;</node>
+    <node x="62.0" y="339.0">C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/common/http/http.d.ts#HttpClient#989;</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/services/app-config.service.ts#HttpClient#53;C:/Users/richa/CapstoneProject/imaclient/src/app/services/app-config.service.ts#Injectable#9;" target="C:/Users/richa/CapstoneProject/imaclient/node_modules/@angular/common/http/http.d.ts#HttpClient#989;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/richa/CapstoneProject/imaclient/src/app/services/app-config.service.ts#HttpClient#53;C:/Users/richa/CapstoneProject/imaclient/src/app/services/app-config.service.ts#Injectable#9;" target="Injectable;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Custom" zoom="1.0" showDependencies="false" x="147.5" y="198.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Details</VISIBILITY>
+</Diagram>
+
