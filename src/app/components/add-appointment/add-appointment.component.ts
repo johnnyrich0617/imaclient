@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Appointment} from '../../models/appointment';
 
 @Component({
   selector: 'app-add-appointment',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddAppointmentComponent implements OnInit {
 
+  newAppointment: Appointment;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  saveAppointment(): void {
+
+  }
+
+  cancelNewAppointment(): void {
+
   }
 
 }

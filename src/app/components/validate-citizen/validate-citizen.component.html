@@ -25,13 +25,16 @@
       <div class="input-part">
          <mat-form-field appearance="outline" >
             <mat-label>SSN or Tax ID for Validation</mat-label>
-            <input matInput [formControl]="validationFormControl" placeholder="Format: 111223333">
-           <mat-error *ngIf="validationFormControl.hasError('required')">
-             SSN or Tax Id is <strong>Required</strong>
-           </mat-error>
+            <input matInput type="password"
+                   placeholder="Format: 111223333"
+                   maxlength="9"
+                   id="usercreds"
+                   #usercreds
+                   [(ngModel)]="resetCreds"
+            >
         </mat-form-field>
       </div>
-      <button mat-raised-button  color="accent">Validate</button>
+      <button mat-raised-button  color="accent" (click)="validateuser(usercreds.value)">Validate</button>
     </div>
     <mat-divider></mat-divider>
     <br>

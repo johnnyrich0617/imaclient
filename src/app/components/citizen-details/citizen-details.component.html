@@ -1,0 +1,14 @@
+<mat-card *ngIf="!showAppointmentDetails">
+  <mat-card-content>
+    <p>citizen-details works!</p>
+    <button mat-raised-button  color="accent" (click)="viewAppointmentDetails()">Show Appointment</button>
+  </mat-card-content>
+</mat-card>
+<mat-card *ngIf="showAppointmentDetails">
+  <mat-card-content>
+    <app-appointment-details [currentCitizenId]="currentCitizenId" (closeAppointmentDetails)='closeAppointmentView($event)'></app-appointment-details>
+  </mat-card-content>
+</mat-card>
+
+
+

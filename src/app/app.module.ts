@@ -21,6 +21,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { CitizenDetailsComponent } from './components/citizen-details/citizen-details.component';
+import {AlertModule} from './components/alert/alert.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import {MatButtonModule} from '@angular/material/button';
     ViewLocationsComponent,
     ViewAppointmentsComponent,
     AdminViewAppointmentsComponent,
-    AdminViewSupplyComponent
+    AdminViewSupplyComponent,
+    CitizenDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatListModule,
     MatInputModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AlertModule
   ],
   providers: [{
     provide: APP_INITIALIZER,

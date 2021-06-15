@@ -7,6 +7,7 @@ import {ViewLocationsComponent} from './components/view-locations/view-locations
 import {AdminViewAppointmentsComponent} from './components/admin-view-appointments/admin-view-appointments.component';
 import {AdminViewSupplyComponent} from './components/admin-view-supply/admin-view-supply.component';
 import {MapResolver} from './resolvers/map-resolver';
+import {CitizenDetailsComponent} from './components/citizen-details/citizen-details.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: 'citizendetails/:id',
-    component: AppointmentDetailsComponent
+    component: CitizenDetailsComponent
   },
   { path: 'appointment/add',
     component: AddAppointmentComponent
