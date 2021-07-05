@@ -2,13 +2,13 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
 import { Subscription } from 'rxjs';
 
-import { Alert, AlertType } from '../../models/alert.model';
-import { AlertService} from '../../services/alert.service';
+import { Alert, AlertType } from './alert.model';
+import { AlertService} from './alert.service';
 
 @Component({ selector: 'app-alert', templateUrl: 'alert.component.html' })
 
 export class AlertComponent implements OnInit, OnDestroy {
-  @Input() id = 'default-alert';
+  @Input() id = 'default-_alert';
   @Input() fade = true;
 
   alerts: Alert[] = [];
@@ -18,10 +18,10 @@ export class AlertComponent implements OnInit, OnDestroy {
   constructor(private router: Router, private alertService: AlertService) { }
 
   ngOnInit(): void {
-    // subscribe to new alert notifications
+    // subscribe to new _alert notifications
     this.alertSubscription = this.alertService.onAlert(this.id)
       .subscribe(alert => {
-        // clear alerts when an empty alert is received
+        // clear alerts when an empty _alert is received
         if (!alert.message) {
           // filter out alerts without 'keepAfterRouteChange' flag
           this.alerts = this.alerts.filter(x => x.keepAfterRouteChange);
@@ -31,10 +31,10 @@ export class AlertComponent implements OnInit, OnDestroy {
           return;
         }
 
-        // add alert to array
+        // add _alert to array
         this.alerts.push(alert);
 
-        // auto close alert if required
+        // auto close _alert if required
         if (alert.autoClose) {
           setTimeout(() => this.removeAlert(alert), 3000);
         }
@@ -59,15 +59,15 @@ export class AlertComponent implements OnInit, OnDestroy {
     if (!this.alerts.includes(alert)) { return; }
 
     if (this.fade) {
-      // fade out alert
+      // fade out _alert
       this.alerts.find(x => x === alert).fade = true;
 
-      // remove alert after faded out
+      // remove _alert after faded out
       setTimeout(() => {
         this.alerts = this.alerts.filter(x => x !== alert);
       }, 250);
     } else {
-      // remove alert
+      // remove _alert
       this.alerts = this.alerts.filter(x => x !== alert);
     }
   }
@@ -75,13 +75,13 @@ export class AlertComponent implements OnInit, OnDestroy {
   cssClass(alert: Alert): any {
     if (!alert) { return; }
 
-    const classes = ['alert', 'alert-dismissable'];
+    const classes = ['alert', '_alert-dismissable'];
 
     const alertTypeClass = {
-      [AlertType.Success]: 'alert-success',
-      [AlertType.Error]: 'alert-danger',
-      [AlertType.Info]: 'alert-info',
-      [AlertType.Warning]: 'alert-warning'
+      [AlertType.Success]: '_alert-success',
+      [AlertType.Error]: '_alert-danger',
+      [AlertType.Info]: '_alert-info',
+      [AlertType.Warning]: '_alert-warning'
     };
 
     classes.push(alertTypeClass[alert.type]);

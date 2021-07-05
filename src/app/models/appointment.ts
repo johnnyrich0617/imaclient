@@ -7,3 +7,13 @@ export interface Appointment {
   appointment_date: Date;
   completed: boolean;
 }
+
+export interface AppointmentMetaData {
+  apptId: number;
+  vaccineName: string;
+  locName: string;
+  locAddr: string;
+  doseNumber: number;
+  apptDate: Date;
+  isComplete: boolean;
+}

@@ -1,4 +1,3 @@
-import {IMapPoint} from './mappoint';
 
 export interface ILocation{
  locId: number;

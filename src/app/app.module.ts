@@ -22,7 +22,7 @@ import { MatListModule } from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { CitizenDetailsComponent } from './components/citizen-details/citizen-details.component';
-import {AlertModule} from './components/alert/alert.module';
+import { AlertModule } from './_alert';
 
 @NgModule({
   declarations: [

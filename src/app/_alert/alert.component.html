@@ -1,0 +1,12 @@
+  <div *ngFor="let alert of alerts" class="{{cssClass(alert)}}">
+    <mat-card [ngClass]="alert.displayType">
+      <div>
+        <div>
+            <mat-card-content>
+              <a class="close" (click)="removeAlert(alert)">&times;</a>
+              <span [innerHTML]="alert.message"></span>
+            </mat-card-content>
+        </div>
+      </div>
+    </mat-card>
+  </div>
