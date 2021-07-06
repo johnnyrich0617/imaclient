@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import {Citizen, CitizenMetaData} from '../../models/citizen';
 import {CitizenDetailsService} from '../../services/citizen-details.service';
 import {Appointment, AppointmentMetaData} from '../../models/appointment';
+import {MatTableDataSource} from '@angular/material/table';
 
 
 @Component({
@@ -19,8 +20,11 @@ export class CitizenDetailsComponent implements OnInit, AfterContentInit {
   appointments: Array<Appointment>;
   appointmentsMd: Array<AppointmentMetaData>;
   citizenMd: CitizenMetaData;
+  displayedColumns: Array<string>;
+  dataSource: MatTableDataSource<any>
 
   constructor(private route: ActivatedRoute, private detailsService: CitizenDetailsService) {
+    this.dataSource = new MatTableDataSource();
   }
 
   /**
@@ -44,10 +48,12 @@ export class CitizenDetailsComponent implements OnInit, AfterContentInit {
     this.detailsService.getCitizenDetails(this.currentCitizenId).subscribe(citizen => {
       console.log('The Retrieved Citizen is = ' + citizen.first_name + ', ' + citizen.last_name + ' With id = ' + citizen.id);
       this.currentCitizen = citizen;
+      this.appointments = this.currentCitizen.appointments;
+      this.appointmentsMd = new Array<AppointmentMetaData>();
+      this.displayedColumns = [ 'apptId', 'apptDate', 'vaccineName', 'doseNumber', 'locName', 'locAddr', 'isComplete' ];
+      this.extractCitizenMetadata();
+      this.extractAppointmentMetadata();
     });
-    this.appointments = this.currentCitizen.appointments;
-    this.extractCitizenMetadata();
-    this.extractAppointmentMetadata();
   }
   viewAppointmentDetails(): void {
     this.showAppointmentDetails = true;
@@ -73,13 +79,14 @@ export class CitizenDetailsComponent implements OnInit, AfterContentInit {
   private extractAppointmentMetadata(): void {
     for (const appt of this.appointments) {
       const apptrow: AppointmentMetaData = {
-        apptId: appt.id, vaccineName: appt.vaccine.vaccine.cn,
+        apptId: appt.id, vaccineName: appt.vac_data.vaccine.cn,
         doseNumber: appt.sched_dose_num, apptDate: appt.appointment_date,
-        locName: appt.vaccine.location.locName, locAddr: appt.vaccine.location.locAddr,
+        locName: appt.vac_data.location.locName, locAddr: appt.vac_data.location.locAddr,
         isComplete: appt.completed
       };
-      this.appointmentsMd.push( apptrow );
+      this.appointmentsMd.push(apptrow);
     }
+    this.dataSource.data = this.appointmentsMd;
   }
 
   /**

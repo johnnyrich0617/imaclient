@@ -23,6 +23,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { CitizenDetailsComponent } from './components/citizen-details/citizen-details.component';
 import { AlertModule } from './_alert';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -36,22 +37,23 @@ import { AlertModule } from './_alert';
     AdminViewSupplyComponent,
     CitizenDetailsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatSliderModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    NgbModule,
-    GoogleMapsModule,
-    MatCardModule,
-    MatListModule,
-    MatInputModule,
-    MatButtonModule,
-    ReactiveFormsModule,
-    AlertModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatSliderModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        HttpClientModule,
+        NgbModule,
+        GoogleMapsModule,
+        MatCardModule,
+        MatListModule,
+        MatInputModule,
+        MatButtonModule,
+        ReactiveFormsModule,
+        AlertModule,
+        MatTableModule
+    ],
   providers: [{
     provide: APP_INITIALIZER,
     multi: true,
