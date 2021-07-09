@@ -1,2 +1,97 @@
-<p>appointment-details works!</p>
-<button mat-raised-button  color="accent" (click)="endAppointmentDetails()">Close Appointment</button>
+<button mat-icon-button [mat-menu-trigger-for]="menu" aria-label="Appointment Details Menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+   <button mat-menu-item (click)="endAppointmentDetails()">
+    <mat-icon>close</mat-icon>
+    <span>Return to Citizen Details</span>
+  </button>
+</mat-menu>
+<div class="title-container"><h5>Immunization Appointments for {{citizenName}}</h5></div>
+<div class="card-container" *ngFor="let appointment of currentAppointments">
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="immu-avatar-class"> </div>
+      <mat-card-title>
+        {{appointment.vac_data.vaccine.vac_target}} Immunization
+      </mat-card-title>
+      <mat-card-subtitle>
+        <div>
+          <table align="center">
+            <tr>
+              <td>
+                Appt. ID: {{appointment.id}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{appointment.vac_data.location.locName}}
+              </td>
+              <td> </td>
+              <td> </td>
+              <td>
+                {{appointment.vac_data.location.locAddr}}
+              </td>
+              <td> </td>
+              <td> </td>
+              <td>
+                Appt. Date:  {{appointment.appointment_date}}
+              </td>
+              <td> </td>
+              <td> </td>
+              <td>
+                Dose Number:  {{appointment.vac_data.des_dose}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Appt. Completed :
+                <mat-checkbox [checked]="appointment.completed" [disabled]="true"></mat-checkbox>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="shadow">
+        <p><strong>Vaccine Details</strong></p>
+        <table class="example-full-width" align="center">
+          <tr>
+            <td>
+              <mat-label>Vaccine: </mat-label>
+              {{appointment.vac_data.vaccine.cn}}
+            </td>
+            <td>
+              <mat-label>Mfg: </mat-label>
+              {{appointment.vac_data.vaccine.mfg}}
+            </td>
+            <td>
+              <mat-label>Ship Date: </mat-label>
+              {{appointment.vac_data.ship_date}}
+            </td>
+            <td>
+              <mat-label>Available Date: </mat-label>
+              {{appointment.vac_data.avail_date}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-label>Chemical Name: </mat-label>
+              {{appointment.vac_data.vaccine.dn}}
+            </td>
+            <td>
+              <mat-label>Lot Number: </mat-label>
+              {{appointment.vac_data.lot_num}}
+            </td>
+            <td>
+              <mat-label>Vaccine Type: </mat-label>
+              {{appointment.vac_data.vaccine.vac_type}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+

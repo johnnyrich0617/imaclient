@@ -12,7 +12,10 @@ export class AppointmentDetailsComponent implements OnInit, AfterContentInit {
   currentCitizenId: number;
 
   @Input()
-  currentAppointment: Appointment;
+  currentAppointments: Array<Appointment>;
+
+  @Input()
+  citizenName: string;
 
   showCard: boolean;
 

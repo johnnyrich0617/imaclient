@@ -15,13 +15,14 @@ export class CitizenDetailsComponent implements OnInit, AfterContentInit {
 
   currentCitizenId: number;
   currentCitizen: Citizen;
+  citizenName: string;
   showAppointmentDetails: boolean;
   addAppointment: boolean;
   appointments: Array<Appointment>;
   appointmentsMd: Array<AppointmentMetaData>;
   citizenMd: CitizenMetaData;
   displayedColumns: Array<string>;
-  dataSource: MatTableDataSource<any>
+  dataSource: MatTableDataSource<any>;
 
   constructor(private route: ActivatedRoute, private detailsService: CitizenDetailsService) {
     this.dataSource = new MatTableDataSource();
@@ -36,7 +37,18 @@ export class CitizenDetailsComponent implements OnInit, AfterContentInit {
     this.route.params.subscribe(params => {
       console.log('AppointmentDetailsComponent:: The Validated Citizen id of this route is: ', params.id);
       this.currentCitizenId = params.id;
+      this.detailsService.getCitizenDetails(this.currentCitizenId).subscribe(citizen => {
+        console.log('The Retrieved Citizen is = ' + citizen.first_name + ', ' + citizen.last_name + ' With id = ' + citizen.id);
+        this.currentCitizen = citizen;
+        this.appointments = this.currentCitizen.appointments;
+        this.citizenName = this.currentCitizen.first_name + ' ' + this.currentCitizen.middle_init + ' ' + this.currentCitizen.last_name;
+        this.appointmentsMd = new Array<AppointmentMetaData>();
+        this.displayedColumns = [ 'apptId', 'apptDate', 'vaccineName', 'doseNumber', 'locName', 'isComplete' ];
+        this.extractCitizenMetadata();
+        this.extractAppointmentMetadata();
+      });
     });
+
     console.log('Outside of route.params subscription');
   }
 
@@ -45,15 +57,6 @@ export class CitizenDetailsComponent implements OnInit, AfterContentInit {
    */
   ngAfterContentInit(): void {
     console.log('ngAfterContentInit called............');
-    this.detailsService.getCitizenDetails(this.currentCitizenId).subscribe(citizen => {
-      console.log('The Retrieved Citizen is = ' + citizen.first_name + ', ' + citizen.last_name + ' With id = ' + citizen.id);
-      this.currentCitizen = citizen;
-      this.appointments = this.currentCitizen.appointments;
-      this.appointmentsMd = new Array<AppointmentMetaData>();
-      this.displayedColumns = [ 'apptId', 'apptDate', 'vaccineName', 'doseNumber', 'locName', 'locAddr', 'isComplete' ];
-      this.extractCitizenMetadata();
-      this.extractAppointmentMetadata();
-    });
   }
   viewAppointmentDetails(): void {
     this.showAppointmentDetails = true;
