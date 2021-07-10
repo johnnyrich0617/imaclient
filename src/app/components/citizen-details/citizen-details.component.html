@@ -1,0 +1,111 @@
+<mat-card *ngIf="!showAppointmentDetails">
+  <mat-card-content class="citizen-details">
+    <div class="shadow">
+      <div class="section>">
+        <h5>Citizen Details</h5>
+        <table class="example-full-width" align="center" >
+         <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>First Name:</mat-label>
+                <input matInput type="text" readonly [(ngModel)]="citizenMd.first_name">
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>Last Name:</mat-label>
+                <input matInput type="text" readonly [(ngModel)]="citizenMd.last_name">
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>Middle Initial:</mat-label>
+                <input matInput type="text" readonly [(ngModel)]="citizenMd.middle_init">
+              </mat-form-field>
+            </td>
+        </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>Address 1:</mat-label>
+                <input matInput type="text" readonly [(ngModel)]="citizenMd.address_1">
+              </mat-form-field>
+            </td>
+            <td *ngIf="citizenMd.address_2">
+              <mat-form-field class="example-full-width">
+                <mat-label>Address 2:</mat-label>
+                <input matInput type="text" readonly [(ngModel)]="citizenMd.address_2">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>City:</mat-label>
+                <input matInput type="text" readonly [(ngModel)]="citizenMd.city">
+              </mat-form-field>
+            </td>
+            <td>
+              <mat-form-field class="example-full-width">
+                <mat-label>State:</mat-label>
+                <input matInput type="text" readonly [(ngModel)]="citizenMd.state">
+              </mat-form-field>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-content class="appointments-table">
+    <div class="shadow">
+      <h5>Immunization Appointments</h5>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <!-- ID Column -->
+        <ng-container matColumnDef="apptId">
+          <th mat-header-cell *matHeaderCellDef> Id. </th>
+          <td mat-cell *matCellDef="let element"> {{element.apptId}} </td>
+        </ng-container>
+        <!-- Vaccine Name Column -->
+        <ng-container matColumnDef="vaccineName">
+          <th mat-header-cell *matHeaderCellDef> Vaccine </th>
+          <td mat-cell *matCellDef="let element"> {{element.vaccineName}} </td>
+        </ng-container>
+        <!-- Location Name Column -->
+        <ng-container matColumnDef="locName">
+          <th mat-header-cell *matHeaderCellDef> Location </th>
+          <td mat-cell *matCellDef="let element"> {{element.locName}} </td>
+        </ng-container>
+        <!-- Dosage Column -->
+        <ng-container matColumnDef="doseNumber">
+          <th mat-header-cell *matHeaderCellDef> Dosage </th>
+          <td mat-cell *matCellDef="let element"> {{element.doseNumber}} </td>
+        </ng-container>
+        <!-- Appointment Date Column -->
+        <ng-container matColumnDef="apptDate">
+          <th mat-header-cell *matHeaderCellDef> Appointment Date </th>
+          <td mat-cell *matCellDef="let element"> {{element.apptDate}} </td>
+        </ng-container>
+        <!-- Appointment Date Column -->
+        <ng-container matColumnDef="isComplete">
+          <th mat-header-cell *matHeaderCellDef> Completed? </th>
+          <td mat-cell *matCellDef="let element">
+            <mat-checkbox [checked]="element.isComplete" [disabled]="true"></mat-checkbox>
+          </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </mat-card-content>
+  <button mat-raised-button  color="accent" (click)="viewAppointmentDetails()">View Appointment Details</button>
+</mat-card>
+<div class="shadow" *ngIf="showAppointmentDetails">
+  <app-appointment-details
+    [currentCitizenId]="currentCitizenId"
+    [currentAppointments]="appointments"
+    [citizenName]="citizenName"
+    (closeAppointmentDetails)='closeAppointmentView($event)'>
+  </app-appointment-details>
+</div>
+
+
+

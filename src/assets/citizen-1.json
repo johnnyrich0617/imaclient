@@ -1,0 +1,74 @@
+{
+  "id": 1,
+  "first_name": "Mary",
+  "last_name": "Jones",
+  "middle_init": "C",
+  "address_1": "1440 Leonardtown Rd",
+  "address_2": null,
+  "city": "Hollywood",
+  "state": "MD",
+  "zip_code": "22636",
+  "ssn": "222114576",
+  "appointments": [
+    {
+      "id": 1,
+      "vac_data": {
+        "id": 1,
+        "vaccine": {
+          "id": 1,
+          "cn": "Pfizer-BioNTech",
+          "dn": "BNT162b2",
+          "mfg": "Pfizer Inc., BioNTech",
+          "vac_type": "mRNA",
+          "vac_target": "COVID-19"
+        },
+        "ship_date": "2021-01-15",
+        "location": {
+          "id": 2,
+          "locLng": -76.6382144,
+          "locName": "St Marys MedStar Hospital",
+          "locLat": 38.30229735,
+          "locAddr": "25500 Point Lookout Rd, Leonardtown, MD 20650"
+        },
+        "avail_date": "2021-01-18",
+        "num_units": 800,
+        "num_available": 0,
+        "lot_num": "AW00340",
+        "des_dose": 1
+      },
+      "sched_dose_num": 1,
+      "appointment_date": "2021-01-25",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "vac_data": {
+        "id": 2,
+        "vaccine": {
+          "id": 1,
+          "cn": "Pfizer-BioNTech",
+          "dn": "BNT162b2",
+          "mfg": "Pfizer Inc., BioNTech",
+          "vac_type": "mRNA",
+          "vac_target": "COVID-19"
+        },
+        "ship_date": "2021-02-07",
+        "location": {
+          "id": 2,
+          "locLng": -76.6382144,
+          "locName": "St Marys MedStar Hospital",
+          "locLat": 38.30229735,
+          "locAddr": "25500 Point Lookout Rd, Leonardtown, MD 20650"
+        },
+        "avail_date": "2021-02-10",
+        "num_units": 800,
+        "num_available": 0,
+        "lot_num": "AW01030",
+        "des_dose": 2
+      },
+      "sched_dose_num": 2,
+      "appointment_date": "2021-02-18",
+      "completed": true
+    }
+  ]
+}
